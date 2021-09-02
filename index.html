@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQUERY</title>
+    <link rel="stylesheet" href="jquery-ui.min.css">
+    <style>
+        #pop{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50% -50%);
+            padding: 10px;
+            font-size: 1.2rem;
+        }
+    </style>
+</head>
+<body>
+    
+    <button onclick="popup()" id="pop">click me</button>
+    
+   
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- plugin -->
+    <script src="jquery-ui.min.js"></script>
+    <!-- plugin -->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script >
+        function popup(){
+//             swal({
+//   title: "Good job!",
+//   text: "You clicked the button!",
+//   icon: "success",
+// });
+      
+  swal({
+  title: "Sorry!",
+  text: "Answer Incorrect!",
+  icon: "error",
+  button: "Try again!"
+});
+};
+    </script>
+</body>
+</html>
